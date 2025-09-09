@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/09/08/test/">Obsidian适用的Markdown语法</a>
+      <a class="p-name article-title" href="/2025/09/08/test/">Latex常用语法</a>
     </h1>
   
 
@@ -93,132 +93,25 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="标题："><a href="#标题：" class="headerlink" title="标题："></a>标题：</h1><h1 id="一级"><a href="#一级" class="headerlink" title="一级"></a>一级</h1><h2 id="二级"><a href="#二级" class="headerlink" title="二级"></a>二级</h2><h3 id="三级"><a href="#三级" class="headerlink" title="三级"></a>三级</h3><h6 id="六级"><a href="#六级" class="headerlink" title="六级"></a>六级</h6><p>记得空一格</p>
-<h2 id="HTML版本：xxx-xxx"><a href="#HTML版本：xxx-xxx" class="headerlink" title="HTML版本：&lt;h1&gt;xxx&lt;/h1&gt;    &lt;h6&gt;xxx&lt;/h6&gt;"></a>HTML版本：<code>&lt;h1&gt;xxx&lt;/h1&gt;    &lt;h6&gt;xxx&lt;/h6&gt;</code></h2><p>效果相同：</p>
-<h1>HTML一级标题</h1>
+        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\geq \leq \sim \approx \equiv \simeq \ll \gg \propto \pm \coloneqq \eqqcolon</span><br></pre></td></tr></table></figure>
+<p>$\geq \leq \sim \approx \equiv \simeq \ll \gg \propto \pm \coloneqq \eqqcolon$ </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\rightarrow \Rightarrow \in \subset</span><br></pre></td></tr></table></figure>
+<p>$\rightarrow \Rightarrow \in \subset$</p>
+<h4 id="单图"><a href="#单图" class="headerlink" title="单图"></a>单图</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;figure&#125;[h]</span><br><span class="line">    \centering</span><br><span class="line">    \includegraphics[width=0.7\textwidth]&#123;seebeck.png&#125;</span><br><span class="line">    \caption&#123;塞贝克效应&#125;</span><br><span class="line">    \label&#123;fig:seebeck&#125;    </span><br><span class="line">\end&#123;figure&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="多图（子图）"><a href="#多图（子图）" class="headerlink" title="多图（子图）"></a>多图（子图）</h4><p>为了能使用大H和subfloat：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\usepackage&#123;subfig&#125;</span><br><span class="line">\usepackage&#123;float&#125;  </span><br></pre></td></tr></table></figure>
 
-<h1 id="段落：插入空白行"><a href="#段落：插入空白行" class="headerlink" title="段落：插入空白行"></a>段落：插入空白行</h1><p>醉裏挑燈看劍，夢迴吹角連營。八百里分麾下炙，五十弦翻塞外聲，沙場秋點兵。</p>
-<p>馬作的盧飛快，弓如霹靂弦驚。了卻君王天下事，贏得生前身後名。可憐白髮生！</p>
-<h2 id="HTML：xxx"><a href="#HTML：xxx" class="headerlink" title="HTML：&lt;p&gt;xxx&lt;/p&gt;"></a>HTML：<code>&lt;p&gt;xxx&lt;/p&gt;</code></h2><p>I really like using Markdown.</p>  <p>I think I'll use it to format all of my documents from now on.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;figure&#125;[H]</span><br><span class="line">\centering</span><br><span class="line">    \subfloat[对$\omega_p$的测量不确定度]&#123;</span><br><span class="line">    \includegraphics[width=0.5\textwidth]&#123;pp1.png&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    \subfloat[对$\omega_a$的测量不确定度]&#123;</span><br><span class="line">    \includegraphics[width=0.5\textwidth]&#123;pp2.png&#125;</span><br><span class="line">    &#125;</span><br><span class="line">\caption&#123;测量量不确定度，来源：\cite&#123;muon_g-2_collaboration_measurement_2002&#125;&#125;</span><br><span class="line">\label&#123;fig:uncertainty&#125;</span><br><span class="line">\end&#123;figure&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="控制页面分布"><a href="#控制页面分布" class="headerlink" title="控制页面分布"></a>控制页面分布</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]&#123;geometry&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h1><p>相邻两行，在第一行的末尾添加两个空格（不太方便），或使用<code>&lt;br&gt;</code>，但Obsidian似乎已处理换行问题。</p>
-<h1 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h1><p>单星号对*或双下划线对_</p>
-<p><em>单星号对</em> 或 <em>单下划线对</em></p>
-<h2 id="HTML："><a href="#HTML：" class="headerlink" title="HTML：&lt;em&gt;&lt;/em&gt;"></a>HTML：<code>&lt;em&gt;&lt;/em&gt;</code></h2><h1 id="粗体"><a href="#粗体" class="headerlink" title="粗体"></a>粗体</h1><p>双星号对**或双下划线对__</p>
-<p><strong>双星号对</strong> 或 <strong>双下划线对</strong></p>
-<h2 id="HTML：-1"><a href="#HTML：-1" class="headerlink" title="HTML：&lt;strong&gt;&lt;/strong&gt;"></a>HTML：<code>&lt;strong&gt;&lt;/strong&gt;</code></h2><h1 id="粗斜体"><a href="#粗斜体" class="headerlink" title="粗斜体"></a>粗斜体</h1><p>自然是<em><strong>三星号对</strong></em>或___三下划线对___</p>
-<h2 id="HTML：-2"><a href="#HTML：-2" class="headerlink" title="HTML：&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;"></a>HTML：<code>&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;</code></h2><h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><h2 id="单用三星号-三减号-或三下划线"><a href="#单用三星号-三减号-或三下划线" class="headerlink" title="单用三星号***三减号---或三下划线___***"></a>单用三星号***三减号---或三下划线___<br>***</h2><hr>
-<h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><p>单反引号`对或三反引号对```<br><code>1</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
 
-<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table>
-<thead>
-<tr>
-<th>标题1（Obs可略）</th>
-<th>标题2</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>内容</td>
-<td>内容</td>
-</tr>
-<tr>
-<td>内容</td>
-<td>内容</td>
-</tr>
-</tbody></table>
-<h1 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h1><p>如这句话本身，特殊符号前加\</p>
-<table>
-<thead>
-<tr>
-<th>Character</th>
-<th>Name</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>\</td>
-<td>backslash</td>
-</tr>
-<tr>
-<td>&#96;</td>
-<td>backtick (see also escaping backticks in code)</td>
-</tr>
-<tr>
-<td>*</td>
-<td>asterisk</td>
-</tr>
-<tr>
-<td>_</td>
-<td>underscore</td>
-</tr>
-<tr>
-<td>{ }</td>
-<td>curly braces</td>
-</tr>
-<tr>
-<td>[ ]</td>
-<td>brackets</td>
-</tr>
-<tr>
-<td>( )</td>
-<td>parentheses</td>
-</tr>
-<tr>
-<td>#</td>
-<td>pound sign</td>
-</tr>
-<tr>
-<td>+</td>
-<td>plus sign</td>
-</tr>
-<tr>
-<td>-</td>
-<td>minus sign (hyphen)</td>
-</tr>
-<tr>
-<td>.</td>
-<td>dot</td>
-</tr>
-<tr>
-<td>!</td>
-<td>exclamation mark</td>
-</tr>
-<tr>
-<td>|</td>
-<td>pipe (see also escaping pipe in tables)</td>
-</tr>
-</tbody></table>
-<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p><code>[超链接显示名](超链接地址 &quot;超链接title&quot;)</code><br><a href="%E8%B6%85%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80" title="超链接title(可去)">超链接显示名</a></p>
-<h2 id="网址或邮箱"><a href="#网址或邮箱" class="headerlink" title="网址或邮箱"></a>网址或邮箱</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;https://markdown.com.cn&gt;</span><br><span class="line">&lt;fake@example.com&gt;</span><br></pre></td></tr></table></figure>
-<p><a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a><br><a href="mailto:&#102;&#97;&#107;&#101;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#x65;&#46;&#x63;&#111;&#x6d;">fake@example.com</a></p>
-<h2 id="HTML：超链接显示名"><a href="#HTML：超链接显示名" class="headerlink" title="HTML：&lt;a href=&quot;超链接地址&quot; title=&quot;超链接title&quot;&gt;超链接显示名&lt;/a&gt;"></a>HTML：<code>&lt;a href=&quot;超链接地址&quot; title=&quot;超链接title&quot;&gt;超链接显示名&lt;/a&gt;</code></h2><p><a href="超链接地址" title="超链接title">超链接显示名</a></p>
-<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![这是图片](路径 &quot;图名&quot;)</span><br></pre></td></tr></table></figure>
-<p><img src="/im" alt="这是图片" title="Magic Gardens"></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>在句前加&gt;，多个段落间空行单用&gt;</p>
-<blockquote>
-<p>引用句子</p>
-</blockquote>
-<blockquote>
-<p>段落间加&gt;的效果</p>
-<p>第二段</p>
-</blockquote>
-<blockquote>
-<p>段落间不加&gt;的效果</p>
-</blockquote>
-<blockquote>
-<p>第二段</p>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>多层引用</p>
-</blockquote>
-<h1 id="符号可以嵌套"><a href="#符号可以嵌套" class="headerlink" title="符号可以嵌套"></a>符号可以嵌套</h1><p>_下划线<br>**双星号</p>
-</blockquote>
-
+<h3 id="摄氏度"><a href="#摄氏度" class="headerlink" title="摄氏度"></a>摄氏度</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\usepackage&#123;siunitx&#125;</span><br><span class="line"></span><br><span class="line">\SI&#123;25&#125;&#123;\degreeCelsius&#125;</span><br></pre></td></tr></table></figure>
+<p>不使用宏包的方案：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">^\circ\text&#123;C&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/09/08/test/" data-id="cmfbwuaeg0001ogfdh1xndbdk" data-title="Obsidian适用的Markdown语法" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/09/08/test/" data-id="cmfbx9hct0001mgfd03104530" data-title="Latex常用语法" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -269,7 +162,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/09/08/hello-world/" data-id="cmfbwuae30000ogfdghcbf71x" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/09/08/hello-world/" data-id="cmfbx9hcp0000mgfdb0hebti8" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -312,7 +205,7 @@
       <ul>
         
           <li>
-            <a href="/2025/09/08/test/">Obsidian适用的Markdown语法</a>
+            <a href="/2025/09/08/test/">Latex常用语法</a>
           </li>
         
           <li>
