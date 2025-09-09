@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/09/08/test/">test</a>
+      <a class="p-name article-title" href="/2025/09/08/test/">Obsidian适用的Markdown语法</a>
     </h1>
   
 
@@ -93,25 +93,132 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><p>这是段落文字…</p>
-<ul>
-<li>列表项 1</li>
-<li>列表项 2</li>
-</ul>
-<p><strong>加粗文字</strong> <em>斜体文字</em></p>
-<p><a href="https://example.com/">链接文字</a></p>
-<p><img src="/%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84.jpg" alt="图片描述"></p>
+        <h1 id="标题："><a href="#标题：" class="headerlink" title="标题："></a>标题：</h1><h1 id="一级"><a href="#一级" class="headerlink" title="一级"></a>一级</h1><h2 id="二级"><a href="#二级" class="headerlink" title="二级"></a>二级</h2><h3 id="三级"><a href="#三级" class="headerlink" title="三级"></a>三级</h3><h6 id="六级"><a href="#六级" class="headerlink" title="六级"></a>六级</h6><p>记得空一格</p>
+<h2 id="HTML版本：xxx-xxx"><a href="#HTML版本：xxx-xxx" class="headerlink" title="HTML版本：&lt;h1&gt;xxx&lt;/h1&gt;    &lt;h6&gt;xxx&lt;/h6&gt;"></a>HTML版本：<code>&lt;h1&gt;xxx&lt;/h1&gt;    &lt;h6&gt;xxx&lt;/h6&gt;</code></h2><p>效果相同：</p>
+<h1>HTML一级标题</h1>
+
+<h1 id="段落：插入空白行"><a href="#段落：插入空白行" class="headerlink" title="段落：插入空白行"></a>段落：插入空白行</h1><p>醉裏挑燈看劍，夢迴吹角連營。八百里分麾下炙，五十弦翻塞外聲，沙場秋點兵。</p>
+<p>馬作的盧飛快，弓如霹靂弦驚。了卻君王天下事，贏得生前身後名。可憐白髮生！</p>
+<h2 id="HTML：xxx"><a href="#HTML：xxx" class="headerlink" title="HTML：&lt;p&gt;xxx&lt;/p&gt;"></a>HTML：<code>&lt;p&gt;xxx&lt;/p&gt;</code></h2><p>I really like using Markdown.</p>  <p>I think I'll use it to format all of my documents from now on.</p>
+
+<h1 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h1><p>相邻两行，在第一行的末尾添加两个空格（不太方便），或使用<code>&lt;br&gt;</code>，但Obsidian似乎已处理换行问题。</p>
+<h1 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h1><p>单星号对*或双下划线对_</p>
+<p><em>单星号对</em> 或 <em>单下划线对</em></p>
+<h2 id="HTML："><a href="#HTML：" class="headerlink" title="HTML：&lt;em&gt;&lt;/em&gt;"></a>HTML：<code>&lt;em&gt;&lt;/em&gt;</code></h2><h1 id="粗体"><a href="#粗体" class="headerlink" title="粗体"></a>粗体</h1><p>双星号对**或双下划线对__</p>
+<p><strong>双星号对</strong> 或 <strong>双下划线对</strong></p>
+<h2 id="HTML：-1"><a href="#HTML：-1" class="headerlink" title="HTML：&lt;strong&gt;&lt;/strong&gt;"></a>HTML：<code>&lt;strong&gt;&lt;/strong&gt;</code></h2><h1 id="粗斜体"><a href="#粗斜体" class="headerlink" title="粗斜体"></a>粗斜体</h1><p>自然是<em><strong>三星号对</strong></em>或___三下划线对___</p>
+<h2 id="HTML：-2"><a href="#HTML：-2" class="headerlink" title="HTML：&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;"></a>HTML：<code>&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;</code></h2><h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><h2 id="单用三星号-三减号-或三下划线"><a href="#单用三星号-三减号-或三下划线" class="headerlink" title="单用三星号***三减号---或三下划线___***"></a>单用三星号***三减号---或三下划线___<br>***</h2><hr>
+<h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><p>单反引号`对或三反引号对```<br><code>1</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
+
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table>
+<thead>
+<tr>
+<th>标题1（Obs可略）</th>
+<th>标题2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容</td>
+<td>内容</td>
+</tr>
+<tr>
+<td>内容</td>
+<td>内容</td>
+</tr>
+</tbody></table>
+<h1 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h1><p>如这句话本身，特殊符号前加\</p>
+<table>
+<thead>
+<tr>
+<th>Character</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\</td>
+<td>backslash</td>
+</tr>
+<tr>
+<td>&#96;</td>
+<td>backtick (see also escaping backticks in code)</td>
+</tr>
+<tr>
+<td>*</td>
+<td>asterisk</td>
+</tr>
+<tr>
+<td>_</td>
+<td>underscore</td>
+</tr>
+<tr>
+<td>{ }</td>
+<td>curly braces</td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>brackets</td>
+</tr>
+<tr>
+<td>( )</td>
+<td>parentheses</td>
+</tr>
+<tr>
+<td>#</td>
+<td>pound sign</td>
+</tr>
+<tr>
+<td>+</td>
+<td>plus sign</td>
+</tr>
+<tr>
+<td>-</td>
+<td>minus sign (hyphen)</td>
+</tr>
+<tr>
+<td>.</td>
+<td>dot</td>
+</tr>
+<tr>
+<td>!</td>
+<td>exclamation mark</td>
+</tr>
+<tr>
+<td>|</td>
+<td>pipe (see also escaping pipe in tables)</td>
+</tr>
+</tbody></table>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p><code>[超链接显示名](超链接地址 &quot;超链接title&quot;)</code><br><a href="%E8%B6%85%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80" title="超链接title(可去)">超链接显示名</a></p>
+<h2 id="网址或邮箱"><a href="#网址或邮箱" class="headerlink" title="网址或邮箱"></a>网址或邮箱</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;https://markdown.com.cn&gt;</span><br><span class="line">&lt;fake@example.com&gt;</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a><br><a href="mailto:&#102;&#97;&#107;&#101;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#x65;&#46;&#x63;&#111;&#x6d;">fake@example.com</a></p>
+<h2 id="HTML：超链接显示名"><a href="#HTML：超链接显示名" class="headerlink" title="HTML：&lt;a href=&quot;超链接地址&quot; title=&quot;超链接title&quot;&gt;超链接显示名&lt;/a&gt;"></a>HTML：<code>&lt;a href=&quot;超链接地址&quot; title=&quot;超链接title&quot;&gt;超链接显示名&lt;/a&gt;</code></h2><p><a href="超链接地址" title="超链接title">超链接显示名</a></p>
+<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![这是图片](路径 &quot;图名&quot;)</span><br></pre></td></tr></table></figure>
+<p><img src="/im" alt="这是图片" title="Magic Gardens"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>在句前加&gt;，多个段落间空行单用&gt;</p>
 <blockquote>
-<p>这是引用块</p>
+<p>引用句子</p>
 </blockquote>
-<pre><code class="language-python"># 代码块
-print(&quot;Hello World!&quot;)
-</code></pre>
+<blockquote>
+<p>段落间加&gt;的效果</p>
+<p>第二段</p>
+</blockquote>
+<blockquote>
+<p>段落间不加&gt;的效果</p>
+</blockquote>
+<blockquote>
+<p>第二段</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>多层引用</p>
+</blockquote>
+<h1 id="符号可以嵌套"><a href="#符号可以嵌套" class="headerlink" title="符号可以嵌套"></a>符号可以嵌套</h1><p>_下划线<br>**双星号</p>
+</blockquote>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/09/08/test/" data-id="cmfank3jp0001ysfd5ifx80i5" data-title="test" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/09/08/test/" data-id="cmfbwuaeg0001ogfdh1xndbdk" data-title="Obsidian适用的Markdown语法" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -162,7 +269,7 @@ print(&quot;Hello World!&quot;)
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/09/08/hello-world/" data-id="cmfank3jg0000ysfd4bwm38py" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/09/08/hello-world/" data-id="cmfbwuae30000ogfdghcbf71x" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -205,7 +312,7 @@ print(&quot;Hello World!&quot;)
       <ul>
         
           <li>
-            <a href="/2025/09/08/test/">test</a>
+            <a href="/2025/09/08/test/">Obsidian适用的Markdown语法</a>
           </li>
         
           <li>
